@@ -89,11 +89,13 @@ The SOC workflow ensures **structured handling of security incidents**:
 
 ```mermaid
 flowchart TD
-    A[Alert Detection (L1)] --> B[Alert Triage & Validation (L1)]
-    B --> C[Incident Creation (L1)]
-    C --> D[Incident Assignment (L2)]
-    D --> E[Investigation & Analysis (L2)]
-    E --> F[Containment & Mitigation (L2/L3)]
-    F --> G[Eradication (L2/L3)]
-    G --> H[Recovery (L2/L3)]
-    H --> I[Lessons Learned & Closure (L3)]
+    A("Alert Detection - L1") --> B("Alert Triage & Validation - L1")
+    B --> C("Incident Creation - L1")
+    C --> D("Incident Assignment - L2")
+    D --> E("Investigation & Analysis - L2")
+    E --> F("Containment & Mitigation - L2/L3")
+    F --> G("Eradication - L2/L3")
+    G --> H("Recovery - L2/L3")
+    H --> I("Lessons Learned & Closure - L3")
+
+
