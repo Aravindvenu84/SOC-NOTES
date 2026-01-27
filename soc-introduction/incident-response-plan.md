@@ -47,32 +47,32 @@ This guide outlines the **six stages of an Incident Response Plan (IRP)**, expla
 ```text
          ┌─────────────┐
          │ Preparation │
-         └─────┬──────┘
+         └─────┬───────┘
                │
                ▼
-        ┌────────────┐
+        ┌────────────────┐
         │ Identification │
-        └─────┬───────┘
+        └──────┬─────────┘
                │
                ▼
-        ┌────────────┐
+        ┌─────────────┐
         │ Containment │
-        └─────┬──────┘
+        └──────┬──────┘
                │
                ▼
-        ┌────────────┐
+        ┌─────────────┐
         │ Eradication │
-        └─────┬──────┘
+        └──────┬──────┘
                │
                ▼
         ┌────────────┐
-        │  Recovery   │
-        └─────┬──────┘
+        │  Recovery  │
+        └──────┬─────┘
                │
                ▼
-        ┌──────────────┐
+        ┌─────────────────┐
         │ Lessons Learned │
-        └──────────────┘
+        └─────────────────┘
 `````
 ## d. Real-World SOC Examples for Each Stage
 
@@ -84,3 +84,4 @@ This guide outlines the **six stages of an Incident Response Plan (IRP)**, expla
 | Eradication     | Remove malware, patch vulnerabilities, disable malicious scripts or user accounts.                          |
 | Recovery        | Restore systems from backups, validate network and application functionality, and resume normal operations. |
 | Lessons Learned | Conduct post-incident review, update SOPs, improve detection rules, and conduct staff security training.    |
+
