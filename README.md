@@ -3,3 +3,4 @@
 
 ## SOC
 - [SOC Introduction]
+- [SOC Tools]
