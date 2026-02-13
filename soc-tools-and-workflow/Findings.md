@@ -61,7 +61,6 @@ YARA is used to detect and classify malware through pattern matching in files, m
 - **Meta**: Provides author, description, and creation date  
 - **Strings**: Defines text, hex, or regex patterns to match  
 - **Condition**: Logical criteria for triggering the rule  
-
 **Sample YARA Rule**:
 ```yara
 rule SampleMalware {
@@ -74,7 +73,11 @@ rule SampleMalware {
         $hex1 = { 6A 40 68 00 30 00 00 }
     condition:
         $str1 or $hex1
-}## Malware Detection Explanation and SOC Usage
+}
+
+
+## Malware Detection Explanation and SOC Usage
+
 
 The YARA rule identifies malware by detecting either the specific string `"evil_function"` or a unique byte sequence. By matching both textual and binary indicators, the rule ensures that malware is detected even if it employs simple obfuscation techniques. This dual-pattern approach allows SOC analysts to identify and classify malicious files effectively, providing greater coverage than single-pattern detection alone.
 
@@ -87,4 +90,5 @@ In SOC operations, this rule is applied to automate malware detection on endpoin
 Integrating log collection, detection rules, and threat intelligence feeds significantly strengthens SOC operations. Comprehensive visibility is achieved by aggregating logs from endpoints, networks, servers, and cloud platforms using Syslog, agent-based, and API-based integrations. Carefully crafted and tuned detection rules enable proactive identification of attacks such as brute force, phishing, privilege escalation, malware execution, and lateral movement.
 
 Threat intelligence feeds and YARA rules enhance detection accuracy and alert prioritization, enabling analysts to focus on the most critical threats. Structured rules, enriched log data, and automated detection workflows allow SOC teams to respond more quickly and investigate incidents thoroughly. By combining these practices, organizations maintain a robust security posture, reduce operational risk, and improve their ability to defend against evolving cyber threats.
+
 
