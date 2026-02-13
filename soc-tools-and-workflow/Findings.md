@@ -74,7 +74,7 @@ rule SampleMalware {
     condition:
         $str1 or $hex1
 }
-
+```
 
 ## Malware Detection Explanation and SOC Usage
 
@@ -90,5 +90,6 @@ In SOC operations, this rule is applied to automate malware detection on endpoin
 Integrating log collection, detection rules, and threat intelligence feeds significantly strengthens SOC operations. Comprehensive visibility is achieved by aggregating logs from endpoints, networks, servers, and cloud platforms using Syslog, agent-based, and API-based integrations. Carefully crafted and tuned detection rules enable proactive identification of attacks such as brute force, phishing, privilege escalation, malware execution, and lateral movement.
 
 Threat intelligence feeds and YARA rules enhance detection accuracy and alert prioritization, enabling analysts to focus on the most critical threats. Structured rules, enriched log data, and automated detection workflows allow SOC teams to respond more quickly and investigate incidents thoroughly. By combining these practices, organizations maintain a robust security posture, reduce operational risk, and improve their ability to defend against evolving cyber threats.
+
 
 
