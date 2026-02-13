@@ -76,6 +76,7 @@ rule SampleMalware {
 }
 ```
 
+
 ## Malware Detection Explanation and SOC Usage
 
 
@@ -84,12 +85,23 @@ The YARA rule identifies malware by detecting either the specific string `"evil_
 In SOC operations, this rule is applied to automate malware detection on endpoints and servers. It supports threat hunting by allowing analysts to proactively search for malicious files and processes across the environment. Additionally, it provides forensic evidence during incident investigations, helping analysts understand the nature and scope of malware infections. When integrated with SIEM and EDR platforms, the rule enhances detection efficiency and contributes to a faster and more accurate incident response process.
 
 ---
+## Screenshots
+
+
+<img width="1920" height="1080" alt="Screenshot from 2026-02-11 17-02-07" src="https://github.com/user-attachments/assets/c24bff73-a0ab-40fd-836f-132e24af368d" />
+
+<img width="1559" height="903" alt="Screenshot from 2026-02-13 10-18-21" src="https://github.com/user-attachments/assets/c18a11c5-5a62-4ce8-aa10-51ced0c25f24" />
+
+<img width="1920" height="1080" alt="Screenshot from 2026-01-26 18-04-10" src="https://github.com/user-attachments/assets/cef39d2a-9225-483a-9884-f4360310f959" />
+
+
 
 ## Conclusion and Insights
 
 Integrating log collection, detection rules, and threat intelligence feeds significantly strengthens SOC operations. Comprehensive visibility is achieved by aggregating logs from endpoints, networks, servers, and cloud platforms using Syslog, agent-based, and API-based integrations. Carefully crafted and tuned detection rules enable proactive identification of attacks such as brute force, phishing, privilege escalation, malware execution, and lateral movement.
 
 Threat intelligence feeds and YARA rules enhance detection accuracy and alert prioritization, enabling analysts to focus on the most critical threats. Structured rules, enriched log data, and automated detection workflows allow SOC teams to respond more quickly and investigate incidents thoroughly. By combining these practices, organizations maintain a robust security posture, reduce operational risk, and improve their ability to defend against evolving cyber threats.
+
 
 
 
